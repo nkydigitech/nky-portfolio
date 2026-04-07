@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nkechi Ahanonye | Cloud & DevOps Engineer</title>
+  <meta name="description" content="Cloud & DevOps Engineer | Tech Educator | Nky Digitech — Building scalable infrastructure and inspiring the next generation of African tech engineers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/style.css" />
+</head>
+<body>
+
+  <!-- ── CURSOR ── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>nky<span class="logo-accent">digitech</span><span class="logo-bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#pipeline">pipeline</a></li>
+      <li><a href="#contact" class="nav-cta">hire me</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-noise"></div>
+
+    <div class="terminal-tag">
+      <span class="terminal-dot red"></span>
+      <span class="terminal-dot yellow"></span>
+      <span class="terminal-dot green"></span>
+      <span class="terminal-title">nky@devops:~$</span>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-pre">Hello, world. I'm</p>
+      <h1 class="hero-name">
+        <span class="name-line">Nkechi Anna</span>
+        <span class="name-line accent-line">Ahanonye</span>
+      </h1>
+      <div class="hero-roles">
+        <span class="role-tag">Cloud Engineer</span>
+        <span class="role-divider">/</span>
+        <span class="role-tag">DevOps Engineer</span>
+        <span class="role-divider">/</span>
+        <span class="role-tag">Tech Educator</span>
+      </div>
+      <p class="hero-tagline">
+        From <em>Virtual Assistant</em> to <em>Cloud Engineer</em> —<br/>
+        building infrastructure that scales, and communities that rise.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Work</span>
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Let's Connect</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">50+</span>
+          <span class="stat-label">Projects Deployed</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-num">AWS</span>
+          <span class="stat-label">Certified (in progress)</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-num">DMI</span>
+          <span class="stat-label">Cohort Co-Mentor</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-code-block">
+      <div class="code-header">
+        <span class="code-filename">deploy.sh</span>
+      </div>
+      <pre class="code-body"><code id="typedCode"></code></pre>
+    </div>
+
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span class="label-text">01 / about</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="about-image-frame">
+            <!-- ✅ YOUR PROFILE PHOTO -->
+            <img
+              src="src/images/Profile.jpg"
+              alt="Nkechi Ahanonye — Cloud & DevOps Engineer"
+              style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:12px;"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="about-image-placeholder" style="display:none;">
+              <span>NK</span>
+              <p class="placeholder-note">// add Profile.jpg to src/images/</p>
+            </div>
+            <div class="about-image-border"></div>
+          </div>
+          <div class="about-image-tag">
+            <span class="tag-icon">📍</span>
+            <span>Lagos, Nigeria</span>
+          </div>
+          <div class="about-badge">
+            <span class="badge-pulse"></span>
+            <span>Open to work</span>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <h2 class="section-title">The engineer<br/><em>behind the terminal.</em></h2>
+          <p>I started my career as a Virtual Assistant — organized, resourceful, and always solving problems. Then I discovered the cloud, and everything changed. I dove into Linux, AWS, Terraform, Ansible, Docker, and Kubernetes and never looked back.</p>
+          <p>Today, I build and automate infrastructure, mentor the next wave of DevOps engineers across Africa through the DMI program, and teach technology to young people who might one day change the world. Every system I deploy, every pipeline I build, every student I teach — it's all part of the same mission: <strong>to prove that where you start doesn't determine where you end up.</strong></p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="hi-icon">⚡</span>
+              <div>
+                <strong>Infrastructure as Code</strong>
+                <span>Terraform & Ansible on AWS</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="hi-icon">🐳</span>
+              <div>
+                <strong>Containerization</strong>
+                <span>Docker · Kubernetes (k3s)</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="hi-icon">🎓</span>
+              <div>
+                <strong>Community Builder</strong>
+                <span>DMI Cohort Co-Mentor · Tech Educator</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ✅ CV DOWNLOAD -->
+          <a href="src/files/Nkechi_Ahanonye_CV.pdf" class="btn btn-outline" download="Nkechi_Ahanonye_CV.pdf">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span class="label-text">02 / skills</span>
+      </div>
+      <h2 class="section-title">The stack I<br/><em>deploy with.</em></h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card" data-category="cloud">
+          <div class="skill-icon">☁️</div>
+          <h3>AWS</h3>
+          <p>EC2, S3, VPC, IAM, RDS, Route 53, ALB, Lambda, DynamoDB, API Gateway</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+          <span class="skill-level">Advanced</span>
+        </div>
+
+        <div class="skill-card" data-category="iac">
+          <div class="skill-icon">🏗️</div>
+          <h3>Terraform</h3>
+          <p>Multi-tier architectures, VPC provisioning, state management, modules</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div>
+          <span class="skill-level">Advanced</span>
+        </div>
+
+        <div class="skill-card" data-category="iac">
+          <div class="skill-icon">⚙️</div>
+          <h3>Ansible</h3>
+          <p>Playbooks, roles, inventory management, automated server configuration</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+          <span class="skill-level">Advanced</span>
+        </div>
+
+        <div class="skill-card" data-category="containers">
+          <div class="skill-icon">🐳</div>
+          <h3>Docker</h3>
+          <p>Containerization, Dockerfiles, multi-tier deployments, Docker Compose</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+          <span class="skill-level">Advanced</span>
+        </div>
+
+        <div class="skill-card" data-category="containers">
+          <div class="skill-icon">☸️</div>
+          <h3>Kubernetes</h3>
+          <p>k3s, pod deployment, services, ingress controllers, rolling updates</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+          <span class="skill-level">Intermediate</span>
+        </div>
+
+        <div class="skill-card" data-category="os">
+          <div class="skill-icon">🐧</div>
+          <h3>Linux</h3>
+          <p>Ubuntu, server administration, shell scripting, Nginx, system maintenance</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+          <span class="skill-level">Advanced</span>
+        </div>
+
+        <div class="skill-card" data-category="cicd">
+          <div class="skill-icon">🔁</div>
+          <h3>CI/CD</h3>
+          <p>GitHub Actions, pipeline automation, deployment workflows</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+          <span class="skill-level">Intermediate</span>
+        </div>
+
+        <div class="skill-card" data-category="code">
+          <div class="skill-icon">💻</div>
+          <h3>Scripting</h3>
+          <p>Bash, Python, PowerShell — automation, tooling, agentic AI workflows</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:72%"></div></div>
+          <span class="skill-level">Intermediate</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span class="label-text">03 / projects</span>
+      </div>
+      <h2 class="section-title">Things I've<br/><em>actually built.</em></h2>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT 1 — Ansible playbook screenshot (green terminal = hero image) -->
+        <article class="project-card featured">
+          <div class="project-img">
+            <img
+              src="src/images/playbook_png.png"
+              alt="Ansible playbook running — ok=14 changed=11 on live AWS EC2"
+              style="width:100%;height:100%;object-fit:cover;object-position:top;"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="project-img-placeholder" style="display:none;">
+              <span class="proj-placeholder-icon">🏗️</span>
+              <span>// playbook_png.png missing from src/images/</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-link" target="_blank">View Live ↗</a>
+              <a href="https://github.com/nkydigitech" class="proj-link" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Terraform</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Ansible</span>
+              <span class="tag">RDS MySQL</span>
+              <span class="tag">Featured</span>
+            </div>
+            <h3>3-Tier AWS Architecture</h3>
+            <p>Provisioned a production-grade 3-tier architecture on AWS using Terraform — VPC, public/private subnets, dual ALBs, EC2 instances, and RDS MySQL. Configured with Ansible playbooks (ok=14, changed=11) from a dedicated control node with zero failures.</p>
+            <div class="project-meta">
+              <span>✅ Infrastructure as Code</span>
+              <span>✅ RDS MySQL live</span>
+              <span>✅ Ansible automated</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 — Book Review App live in browser -->
+        <article class="project-card">
+          <div class="project-img">
+            <img
+              src="src/images/webserver_png.png"
+              alt="Book Review App live in browser on AWS"
+              style="width:100%;height:100%;object-fit:cover;object-position:top;"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="project-img-placeholder" style="display:none;">
+              <span class="proj-placeholder-icon">🐳</span>
+              <span>// webserver_png.png missing from src/images/</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-link" target="_blank">View Live ↗</a>
+              <a href="https://github.com/nkydigitech" class="proj-link" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Docker</span>
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <h3>Book Review App — Docker Multi-Tier</h3>
+            <p>Containerized a full-stack book review application with React frontend, Node.js backend, and MongoDB — 3 containers running simultaneously. Deployed live on AWS EC2 and resolved CORS, SSR rendering challenges in GitHub Codespaces.</p>
+            <div class="project-meta">
+              <span>✅ 3 containers live</span>
+              <span>✅ AWS EC2 deployed</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 — Kubernetes cluster (kubectl get nodes) -->
+        <article class="project-card">
+          <div class="project-img">
+            <img
+              src="src/images/get_pods_png.png"
+              alt="Kubernetes cluster — kubectl get nodes showing 3 Ready nodes"
+              style="width:100%;height:100%;object-fit:cover;object-position:top;"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="project-img-placeholder" style="display:none;">
+              <span class="proj-placeholder-icon">☸️</span>
+              <span>// get_pods_png.png missing from src/images/</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-link" target="_blank">View Live ↗</a>
+              <a href="https://github.com/nkydigitech" class="proj-link" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Kubernetes</span>
+              <span class="tag">k3s</span>
+              <span class="tag">Docker</span>
+            </div>
+            <h3>Kubernetes Cluster Deployment</h3>
+            <p>Deployed a multi-node Kubernetes cluster (1 control-plane + 2 workers) running v1.34.0 — all nodes in Ready state. Managed pod scheduling, services, and container orchestration across the cluster.</p>
+            <div class="project-meta">
+              <span>✅ 3-node cluster</span>
+              <span>✅ All nodes Ready</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 4 — Docker ps showing 3 containers -->
+        <article class="project-card">
+          <div class="project-img">
+            <img
+              src="src/images/docker_ps_png.png"
+              alt="Docker containers running — react frontend, node backend, mongo db"
+              style="width:100%;height:100%;object-fit:cover;object-position:top;"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="project-img-placeholder" style="display:none;">
+              <span class="proj-placeholder-icon">🤖</span>
+              <span>// docker_ps_png.png missing from src/images/</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-link" target="_blank">View Live ↗</a>
+              <a href="https://github.com/nkydigitech" class="proj-link" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Docker</span>
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <h3>Multi-Container App — Docker Compose</h3>
+            <p>Orchestrated 3 Docker containers simultaneously: React frontend on port 3000, Node.js backend on port 5000, and MongoDB on port 27017 — all running from a single docker-compose configuration.</p>
+            <div class="project-meta">
+              <span>✅ react_frontend</span>
+              <span>✅ node_backend</span>
+              <span>✅ mongo_db</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PIPELINE DIAGRAM ── -->
+  <section class="pipeline" id="pipeline">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span class="label-text">04 / how I deploy</span>
+      </div>
+      <h2 class="section-title">My deployment<br/><em>pipeline.</em></h2>
+      <p class="pipeline-intro">Every project I build follows a real DevOps workflow — from code to cloud.</p>
+
+      <div class="pipeline-steps">
+
+        <div class="pipe-step" data-step="1">
+          <div class="pipe-icon">💻</div>
+          <div class="pipe-body">
+            <h4>Local Dev (WSL2)</h4>
+            <p>Write code, Terraform configs, Ansible playbooks on Ubuntu via WSL2</p>
+            <code>terraform init && terraform plan</code>
+          </div>
+          <div class="pipe-arrow">→</div>
+        </div>
+
+        <div class="pipe-step" data-step="2">
+          <div class="pipe-icon">🐙</div>
+          <div class="pipe-body">
+            <h4>GitHub</h4>
+            <p>Push code to GitHub — version control, PR review, CI/CD triggers</p>
+            <code>git push origin main</code>
+          </div>
+          <div class="pipe-arrow">→</div>
+        </div>
+
+        <div class="pipe-step" data-step="3">
+          <div class="pipe-icon">🏗️</div>
+          <div class="pipe-body">
+            <h4>Terraform Provisions</h4>
+            <p>EC2, VPC, security groups, IAM roles spun up automatically</p>
+            <code>terraform apply -auto-approve</code>
+          </div>
+          <div class="pipe-arrow">→</div>
+        </div>
+
+        <div class="pipe-step" data-step="4">
+          <div class="pipe-icon">⚙️</div>
+          <div class="pipe-body">
+            <h4>Ansible Configures</h4>
+            <p>Installs Docker, Nginx, pulls images, sets up services</p>
+            <code>ansible-playbook site.yml</code>
+          </div>
+          <div class="pipe-arrow">→</div>
+        </div>
+
+        <div class="pipe-step" data-step="5">
+          <div class="pipe-icon">🐳</div>
+          <div class="pipe-body">
+            <h4>Docker Runs App</h4>
+            <p>Container spins up with the app, connected to Nginx reverse proxy</p>
+            <code>docker run -d -p 3000:3000 app</code>
+          </div>
+          <div class="pipe-arrow">→</div>
+        </div>
+
+        <div class="pipe-step" data-step="6">
+          <div class="pipe-icon">☸️</div>
+          <div class="pipe-body">
+            <h4>k3s Orchestrates</h4>
+            <p>Kubernetes manages pods, scaling, and service routing</p>
+            <code>kubectl apply -f deployment.yaml</code>
+          </div>
+          <div class="pipe-arrow">→</div>
+        </div>
+
+        <div class="pipe-step live" data-step="7">
+          <div class="pipe-icon">🌍</div>
+          <div class="pipe-body">
+            <h4>Live on GitHub Pages</h4>
+            <p>Site accessible via GitHub Pages — free HTTPS, zero cost</p>
+            <code>https://nkydigitech.github.io</code>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span class="label-text">05 / contact</span>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-left">
+          <h2 class="section-title">Let's build<br/><em>something great.</em></h2>
+          <p>I'm actively seeking Cloud & DevOps Engineer roles. If you need someone who can provision infrastructure, automate deployments, and ship reliable systems — let's talk.</p>
+
+          <div class="contact-links">
+            <a href="mailto:nahanonye@gmail.com" class="contact-link">
+              <span class="cl-icon">✉️</span>
+              <span>nahanonye@gmail.com</span>
+            </a>
+            <a href="https://github.com/nkydigitech" class="contact-link" target="_blank">
+              <span class="cl-icon">🐙</span>
+              <span>github.com/nkydigitech</span>
+            </a>
+            <a href="https://www.linkedin.com/in/nkechiahanonye" class="contact-link" target="_blank">
+              <span class="cl-icon">💼</span>
+              <span>linkedin.com/in/nkechiahanonye</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about the role or project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            <span>Send Message</span>
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-bracket">[</span>nky<span class="logo-accent">digitech</span><span class="logo-bracket">]</span>
+        </div>
+        <p class="footer-copy">Built with ❤️ from Lagos, Nigeria · Hosted on GitHub Pages · Deployed with Terraform + Ansible + Docker + k3s</p>
+        <p class="footer-year">© 2026 Nkechi Ahanonye</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/js/main.js"></script>
+</body>
+</html>
