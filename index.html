@@ -77,7 +77,6 @@
         <div class="stat-sep"></div>
         <div class="stat">
           <span class="stat-num">AWS</span>
-          <!-- FIX 1: Removed "Certified (in progress)" — replaced with honest, strong label -->
           <span class="stat-label">Practitioner Study</span>
         </div>
         <div class="stat-sep"></div>
@@ -274,12 +273,10 @@
               style="width:100%;height:100%;object-fit:cover;object-position:top;"
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
             />
-            <!-- FIX 2: Removed debug comment from placeholder text -->
             <div class="project-img-placeholder" style="display:none;">
               <span class="proj-placeholder-icon">🏗️</span>
             </div>
             <div class="project-overlay">
-              <!-- FIX 3: Replaced both duplicate GitHub links with specific repo links -->
               <a href="https://github.com/nkydigitech/dmi-cohort2-terraform-assignments" class="proj-link" target="_blank">Terraform Repo ↗</a>
               <a href="https://github.com/nkydigitech/dmi-cohort2-ansible-assignments" class="proj-link" target="_blank">Ansible Repo ↗</a>
             </div>
@@ -306,7 +303,7 @@
         <article class="project-card featured">
           <div class="project-img">
             <img
-              src="src/images/project-rds.png"
+              src="src/images/project-subnets.png"
               alt="GEORGEL Cancer Foundation website — live client project"
               style="width:100%;height:100%;object-fit:cover;object-position:top;"
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
@@ -350,7 +347,6 @@
               <span class="proj-placeholder-icon">🐳</span>
             </div>
             <div class="project-overlay">
-              <!-- FIX 4: Replaced dead href="#" with real repo link -->
               <a href="https://github.com/nkydigitech/dmi-cohort2-ansible-assignments" class="proj-link" target="_blank">GitHub ↗</a>
             </div>
           </div>
@@ -370,7 +366,7 @@
           </div>
         </article>
 
-        <!-- PROJECT 3 — Kubernetes Cluster -->
+        <!-- PROJECT 4 — Kubernetes Cluster -->
         <article class="project-card">
           <div class="project-img">
             <img
@@ -383,7 +379,6 @@
               <span class="proj-placeholder-icon">☸️</span>
             </div>
             <div class="project-overlay">
-              <!-- FIX 5: Replaced dead href="#" with real repo link -->
               <a href="https://github.com/nkydigitech/dmi-cohort2-terraform-assignments" class="proj-link" target="_blank">GitHub ↗</a>
             </div>
           </div>
@@ -402,7 +397,7 @@
           </div>
         </article>
 
-        <!-- PROJECT 4 — Docker Compose -->
+        <!-- PROJECT 5 — Docker Compose -->
         <article class="project-card">
           <div class="project-img">
             <img
@@ -415,7 +410,6 @@
               <span class="proj-placeholder-icon">🤖</span>
             </div>
             <div class="project-overlay">
-              <!-- FIX 6: Replaced dead href="#" with real repo link -->
               <a href="https://github.com/nkydigitech/dmi-cohort2-ansible-assignments" class="proj-link" target="_blank">GitHub ↗</a>
             </div>
           </div>
@@ -554,7 +548,8 @@
           </div>
         </div>
 
-        <form class="contact-form" id="contactForm" action="https://formspree.io/f/mjgjrzvk" method="POST">
+        <!-- FORM FIX: action + method + onsubmit bypasses JS interference -->
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/mjgjrzvk" method="POST" onsubmit="this.submit()">
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name" required />
