@@ -77,7 +77,8 @@
         <div class="stat-sep"></div>
         <div class="stat">
           <span class="stat-num">AWS</span>
-          <span class="stat-label">Certified (in progress)</span>
+          <!-- FIX 1: Removed "Certified (in progress)" — replaced with honest, strong label -->
+          <span class="stat-label">Practitioner Study</span>
         </div>
         <div class="stat-sep"></div>
         <div class="stat">
@@ -111,7 +112,6 @@
       <div class="about-grid">
         <div class="about-image-wrap">
           <div class="about-image-frame">
-            <!-- ✅ YOUR PROFILE PHOTO -->
             <img
               src="src/images/profile.jpg"
               alt="Nkechi Ahanonye — Cloud & DevOps Engineer"
@@ -120,7 +120,6 @@
             />
             <div class="about-image-placeholder" style="display:none;">
               <span>NK</span>
-              <p class="placeholder-note">// add Profile.jpg to src/images/</p>
             </div>
             <div class="about-image-border"></div>
           </div>
@@ -163,7 +162,6 @@
             </div>
           </div>
 
-          <!-- ✅ CV DOWNLOAD -->
           <a href="src/files/Nkechi_Ahanonye_CV.pdf" class="btn btn-outline" download="Nkechi_Ahanonye_CV.pdf">
             <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
             Download CV
@@ -263,7 +261,7 @@
 
       <div class="projects-grid">
 
-        <!-- PROJECT 1 — Ansible playbook screenshot (green terminal = hero image) -->
+        <!-- PROJECT 1 — 3-Tier AWS Architecture -->
         <article class="project-card featured">
           <div class="project-img">
             <img
@@ -272,13 +270,14 @@
               style="width:100%;height:100%;object-fit:cover;object-position:top;"
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
             />
+            <!-- FIX 2: Removed debug comment from placeholder text -->
             <div class="project-img-placeholder" style="display:none;">
               <span class="proj-placeholder-icon">🏗️</span>
-              <span>// playbook_png.png missing from src/images/</span>
             </div>
             <div class="project-overlay">
-              <a href="https://github.com/nkydigitech" class="proj-link" target="_blank">GitHub ↗</a>
-              <a href="https://github.com/nkydigitech" class="proj-link" target="_blank">GitHub ↗</a>
+              <!-- FIX 3: Replaced both duplicate GitHub links with specific repo links -->
+              <a href="https://github.com/nkydigitech/dmi-cohort2-terraform-assignments" class="proj-link" target="_blank">Terraform Repo ↗</a>
+              <a href="https://github.com/nkydigitech/dmi-cohort2-ansible-assignments" class="proj-link" target="_blank">Ansible Repo ↗</a>
             </div>
           </div>
           <div class="project-info">
@@ -299,7 +298,7 @@
           </div>
         </article>
 
-        <!-- PROJECT 2 — Book Review App live in browser -->
+        <!-- PROJECT 2 — Book Review App -->
         <article class="project-card">
           <div class="project-img">
             <img
@@ -310,11 +309,10 @@
             />
             <div class="project-img-placeholder" style="display:none;">
               <span class="proj-placeholder-icon">🐳</span>
-              <span>// webserver_png.png missing from src/images/</span>
             </div>
             <div class="project-overlay">
-              <a href="#" class="proj-link" target="_blank">View Live ↗</a>
-              <a href="https://github.com/nkydigitech" class="proj-link" target="_blank">GitHub ↗</a>
+              <!-- FIX 4: Replaced dead href="#" with real repo link -->
+              <a href="https://github.com/nkydigitech/dmi-cohort2-ansible-assignments" class="proj-link" target="_blank">GitHub ↗</a>
             </div>
           </div>
           <div class="project-info">
@@ -333,7 +331,7 @@
           </div>
         </article>
 
-        <!-- PROJECT 3 — Kubernetes cluster (kubectl get nodes) -->
+        <!-- PROJECT 3 — Kubernetes Cluster -->
         <article class="project-card">
           <div class="project-img">
             <img
@@ -344,11 +342,10 @@
             />
             <div class="project-img-placeholder" style="display:none;">
               <span class="proj-placeholder-icon">☸️</span>
-              <span>// get_pods_png.png missing from src/images/</span>
             </div>
             <div class="project-overlay">
-              <a href="#" class="proj-link" target="_blank">View Live ↗</a>
-              <a href="https://github.com/nkydigitech" class="proj-link" target="_blank">GitHub ↗</a>
+              <!-- FIX 5: Replaced dead href="#" with real repo link -->
+              <a href="https://github.com/nkydigitech/dmi-cohort2-terraform-assignments" class="proj-link" target="_blank">GitHub ↗</a>
             </div>
           </div>
           <div class="project-info">
@@ -366,7 +363,7 @@
           </div>
         </article>
 
-        <!-- PROJECT 4 — Docker ps showing 3 containers -->
+        <!-- PROJECT 4 — Docker Compose -->
         <article class="project-card">
           <div class="project-img">
             <img
@@ -377,11 +374,10 @@
             />
             <div class="project-img-placeholder" style="display:none;">
               <span class="proj-placeholder-icon">🤖</span>
-              <span>// docker_ps_png.png missing from src/images/</span>
             </div>
             <div class="project-overlay">
-              <a href="#" class="proj-link" target="_blank">View Live ↗</a>
-              <a href="https://github.com/nkydigitech" class="proj-link" target="_blank">GitHub ↗</a>
+              <!-- FIX 6: Replaced dead href="#" with real repo link -->
+              <a href="https://github.com/nkydigitech/dmi-cohort2-ansible-assignments" class="proj-link" target="_blank">GitHub ↗</a>
             </div>
           </div>
           <div class="project-info">
