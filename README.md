@@ -1,75 +1,33 @@
-# 🚀 Nky Digitech Portfolio
+# Nkechi Anna Ahanonye | Cloud & DevOps Engineer
 
-> Cloud & DevOps Engineer Portfolio — built, containerized, and deployed with a real DevOps pipeline.
+Automating what slows teams down. Architecting resilient systems.
 
-## 📁 Project Structure
+---
 
-```
-nky-portfolio/
-├── index.html              ← Main portfolio page (single-page, scroll sections)
-├── Dockerfile              ← Container definition (nginx:alpine)
-├── nginx.conf              ← Nginx server config
-├── src/
-│   ├── css/
-│   │   └── style.css       ← All styles (dark terminal aesthetic)
-│   ├── js/
-│   │   └── main.js         ← Interactions, typing animation, scroll reveals
-│   └── images/             ← Add your screenshots here!
-│       ├── profile.jpg         ← Your photo (replace placeholder)
-│       ├── project-terraform.png
-│       ├── project-docker.png
-│       ├── project-agent.png
-│       └── project-portfolio.png
-└── README.md
-```
+## 🚀 Professional Summary
+Cloud & DevOps Engineer with 15 years of experience in technical systems management. I help teams stop firefighting deployments and start shipping reliably, building systems that don't break at 2 AM. 
 
-## 🖼️ Adding Your Screenshots
+Passionate about leveraging **Agentic AI** to streamline and intelligently automate DevOps workflows.
 
-Replace the placeholder divs in `index.html` with real `<img>` tags:
+## 🛠 Tech Stack
+- **Cloud:** AWS (EC2, S3, VPC, IAM, RDS)
+- **Infrastructure as Code:** Terraform, Ansible
+- **Containers & Orchestration:** Docker, Kubernetes (k3s)
+- **CI/CD:** GitHub Actions
+- **AI/Automation:** Agentic AI (Claude, LangChain), OpenAI API, Streamlit
+- **OS & Networking:** Linux (Ubuntu), Nginx, Bash, Python
 
-```html
-<!-- Before (placeholder) -->
-<div class="project-img-placeholder">
-  <span class="proj-placeholder-icon">🏗️</span>
-  <span>// add terraform screenshot</span>
-</div>
+## 🏗 Key Projects
+- **3-Tier AWS Architecture:** Provisioned production-grade infrastructure with Terraform and Ansible.
+- **GEORGEL Cancer Foundation:** Delivered a live, production-ready website supporting NGOs, JUTH, and the Ministry of Health.
+- **Docker Multi-Tier Apps:** Orchestrated multi-service environments (React/Node/MongoDB) on AWS.
+- **Kubernetes Cluster:** Deployed scalable multi-node k3s clusters.
 
-<!-- After (real image) -->
-<img src="src/images/project-terraform.png" alt="Terraform 3-tier AWS architecture" />
-```
+## 🎓 Mentorship
+I co-mentor the next generation of engineers at the **DevOps Micro Internship (DMI)**, guiding them through production-grade microservices deployments across Africa.
 
-For the about section profile photo:
-```html
-<!-- Replace the about-image-placeholder div with: -->
-<img src="src/images/profile.jpg" alt="Nkechi Ahanonye" style="width:100%;height:100%;object-fit:cover;border-radius:12px;" />
-```
-
-## 🐳 Run with Docker
-
-```bash
-# Build the image
-docker build -t nky-portfolio .
-
-# Run locally
-docker run -d -p 8080:80 --name portfolio nky-portfolio
-
-# Open in browser
-open http://localhost:8080
-
-# Stop
-docker stop portfolio && docker rm portfolio
-```
-
-## 🏗️ Deploy with Terraform + Ansible
-
-See Phase 3 & 4 of the build guide.
-
-## ☸️ Deploy with Kubernetes (k3s)
-
-See Phase 5 of the build guide — k3s manifest included.
-
-## 📞 Contact
-
-- Email: nahanonye@gmail.com
-- GitHub: github.com/nkydigitech
-- LinkedIn: linkedin.com/in/nkydigitech
+## 📬 Contact
+- **Email:** [nahanonye@gmail.com](mailto:nahanonye@gmail.com)
+- **Email:** [nkydigitech01@gmail.com](mailto:nkydigitech01@gmail.com)
+- **LinkedIn:** [Nkechi Anna Ahanonye](https://www.linkedin.com/in/nkechiahanonye)
+- **GitHub:** [nkydigitech](https://github.com/nkydigitech)
