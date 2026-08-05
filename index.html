@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nkechi Anna Ahanonye | Cloud & DevOps Engineer</title>
-  <meta name="description" content="Cloud & DevOps Engineer | AWS · Ansible · Terraform · K8s | Agentic AI Automation | Training the Next Generation of African DevOps Engineers | Open to Remote Roles" />
+  <title>Nkechi Anna Ahanonye | Cloud & DevOps Engineer | 1-min Automated Pipelines</title>
+  <meta name="description" content="I turn manual, 3 AM-breaking deployments into 1-min automated pipelines with AWS + Ansible + Terraform. 15-Module Ansible Lab with real terminal. Open to Remote Roles." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -12,11 +12,9 @@
 </head>
 <body>
 
-  <!-- ── CURSOR ── -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-dot" id="cursorDot"></div>
 
-  <!-- ── NAV ── -->
   <nav class="nav" id="nav">
     <div class="nav-logo">
       <span class="logo-bracket">[</span>nky<span class="logo-accent">digitech</span><span class="logo-bracket">]</span>
@@ -33,7 +31,7 @@
     </button>
   </nav>
 
-  <!-- ── HERO ── -->
+  <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero-grid-bg"></div>
     <div class="hero-noise"></div>
@@ -56,26 +54,29 @@
         <span class="role-tag">Cloud & DevOps Engineer</span>
         <span class="role-divider">/</span>
         <span class="role-tag">AWS · Ansible · Terraform · K8s</span>
-        <span class="role-divider">/</span>
-        <span class="role-tag">Agentic AI Automation</span>
       </div>
       <p class="hero-tagline">
-        Building resilient infrastructure on AWS with Ansible, Terraform & K8s. <br/>
-        Training the next generation of African DevOps engineers. <strong>Open to Remote Roles.</strong>
+        I turn manual, 3 AM-breaking deployments into 1-min automated pipelines with AWS + Ansible + Terraform.<br/>
+        No more SSH-ing into prod. <strong>Featured: 15-Module Ansible Lab with real terminal.</strong><br/>
+        <span style="opacity:0.8">Training 30+ African DevOps engineers. Open to Remote Roles.</span>
       </p>
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary">
-          <span>View Case Studies</span>
+          <span>View Pipeline Proof (2m 11s → 1m 18s)</span>
           <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a href="#contact" class="btn btn-ghost">Let's Connect</a>
+        <a href="https://github.com/nkydigitech/ansible_practical" class="btn btn-ghost" target="_blank">GitHub: ansible_practical</a>
       </div>
       <div class="hero-stats">
         <div class="stat">
-          <span class="stat-num">99.9%</span>
-          <span class="stat-label">Uptime Obsession</span>
+          <span class="stat-num">1m 18s</span>
+          <span class="stat-label">Deploy Time (was manual)</span>
         </div>
-        
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-num">40+</span>
+          <span class="stat-label">IaC Repos Audited</span>
+        </div>
         <div class="stat-sep"></div>
         <div class="stat">
           <span class="stat-num">DMI</span>
@@ -86,9 +87,29 @@
 
     <div class="hero-code-block">
       <div class="code-header">
-        <span class="code-filename">deploy.sh</span>
+        <span class="code-filename">.github/workflows/ansible-ci.yml</span>
       </div>
-      <pre class="code-body"><code id="typedCode"></code></pre>
+      <pre class="code-body"><code id="typedCode">name: Ansible CI/CD Pipeline
+on: [push]
+jobs:
+  lint-and-dry-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: yamllint
+        run: yamllint .
+      - name: ansible-lint
+        run: ansible-lint
+      - name: syntax-check
+        run: ansible-playbook --syntax-check site.yml
+      - name: dry-run
+        run: ansible-playbook --check --diff site.yml
+  deploy:
+    needs: lint-and-dry-run
+    runs-on: ubuntu-latest
+    steps:
+      - run: ansible-playbook site.yml
+# Stop SSH-ing into prod.</code></pre>
     </div>
 
     <div class="scroll-hint">
@@ -97,7 +118,7 @@
     </div>
   </section>
 
-  <!-- ── ABOUT ── -->
+  <!-- ABOUT -->
   <section class="about" id="about">
     <div class="container">
       <div class="section-label">
@@ -132,42 +153,42 @@
         <div class="competencies-grid">
           <div class="comp-item">
             <span class="comp-icon">🚀</span>
-            <span class="comp-text">Scalable Cloud Architecture</span>
+            <span class="comp-text">1-min Automated Pipelines</span>
           </div>
           <div class="comp-item">
-            <span class="comp-icon">🧠</span>
-            <span class="comp-text">Agentic AI Automation</span>
-          </div>
-          <div class="comp-item">
-            <span class="comp-icon">🛠️</span>
+            <span class="comp-icon">🛠</span>
             <span class="comp-text">Infrastructure as Code (IaC)</span>
           </div>
           <div class="comp-item">
-            <span class="comp-icon">☸️</span>
+            <span class="comp-icon">☸</span>
             <span class="comp-text">Kubernetes Orchestration</span>
+          </div>
+          <div class="comp-item">
+            <span class="comp-icon">📝</span>
+            <span class="comp-text">Mentor-Grade Docs</span>
           </div>
         </div>
       </div>
 
       <div class="about-text">
           <h2 class="section-title">Engineering reliability. <em>Automating growth.</em></h2>
-          <p>My journey in tech started 15 years ago running a high-pressure cybercafe. That experience taught me a fundamental truth: <strong>real users don't care about your stack—they care that the system works.</strong></p>
-          <p>I have spent my career moving from physical hardware to the cloud, always obsessed with one thing: <strong>Reliability.</strong> Today, I bridge the gap between traditional DevOps and the future of AI. By integrating Agentic AI (Claude, LangChain) into the DevOps lifecycle, I help companies move away from "firefighting" and toward a state of automated, self-healing infrastructure.</p>
-          <p>My approach to infrastructure focuses on three core pillars:</p>
+          <p>My journey in tech started 15 years ago running a high-pressure cybercafe. That experience taught me a fundamental truth: <strong>real users don't care about your stack—they care that the system works.</strong> Downtime = lost revenue immediately.</p>
+          <p>I moved from physical hardware to cloud, obsessed with one thing: <strong>Reliability.</strong> Today I help teams stop SSH-ing into prod. I build 1-min automated pipelines: <strong>Lint → Dry-Run → Deploy</strong> with GitHub Actions + Ansible + Terraform.</p>
+          <p>My approach:</p>
           <ul>
-            <li><strong>Efficiency:</strong> Using Terraform to slash configuration time by ~60%.</li>
-            <li><strong>Stability:</strong> Building CI/CD pipelines that eliminate manual, error-prone deployments.</li>
-            <li><strong>Intelligence:</strong> Leveraging Agentic AI to intelligently optimize AWS costs and workflows.</li>
+            <li><strong>Efficiency:</strong> Terraform + Ansible slash setup from hours to minutes. Cut deployment time by 60%.</li>
+            <li><strong>Stability:</strong> 6 checks before prod — yamllint, ansible-lint, shellcheck, syntax-check, --check --diff. No more 3 AM firefights.</li>
+            <li><strong>Documentation:</strong> Mentor-grade runbooks that cut new member ramp-up by 30%.</li>
           </ul>
-          <p>Beyond engineering, I co-mentor the next generation of professionals at <strong>DevOps Micro Internship (DMI</strong>), guiding engineers across Africa through production-grade microservices deployments.</p>
+          <p>Beyond engineering, I co-mentor 30+ engineers at <strong>DevOps Micro Internship (DMI)</strong> across Africa and audited 40+ IaC repos for production-grade quality.</p>
           <p>If your team needs an engineer who can architect, automate, and document production infrastructure that scales without the stress — <strong>I am open to Remote roles.</strong></p>
 
           <div class="about-highlights">
             <div class="highlight-item">
               <span class="hi-icon">⚡</span>
               <div>
-                <strong>Infrastructure as Code</strong>
-                <span>Terraform & Ansible on AWS</span>
+                <strong>Lint → Dry-Run → Deploy</strong>
+                <span>Template reused as team standard</span>
               </div>
             </div>
             <div class="highlight-item">
@@ -181,7 +202,7 @@
               <span class="hi-icon">🎓</span>
               <div>
                 <strong>Technical Leadership</strong>
-                <span>DMI Cohort Co-Mentor · AI Strategist</span>
+                <span>DMI Mentor · 30+ Engineers Trained</span>
               </div>
             </div>
           </div>
@@ -194,7 +215,7 @@
       </div>
   </section>
 
-  <!-- ── SKILLS ── -->
+  <!-- SKILLS -->
   <section class="skills" id="skills">
     <div class="container">
       <div class="section-label">
@@ -204,109 +225,81 @@
       <h2 class="section-title">The stack I<br/><em>deploy with.</em></h2>
 
       <div class="skills-grid">
-        <div class="skill-card" data-category="ai">
-          <div class="skill-icon">🧠</div>
-          <h3>Agentic AI</h3>
-          <p>Claude, LangChain, AI-driven automation, LLM integration</p>
+        <div class="skill-card" data-category="iac">
+          <div class="skill-icon">⚙</div>
+          <h3>Ansible</h3>
+          <p>Playbooks, roles, inventory, Vault, Galaxy — 15-Module Lab</p>
           <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
           <span class="skill-level">Advanced</span>
         </div>
-        <div class="skill-card" data-category="containers">
-          <div class="skill-icon">☸️</div>
-          <h3>Kubernetes</h3>
-          <p>k3s, pod deployment, services, ingress controllers, rolling updates</p>
-          <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
-          <span class="skill-level">Advanced</span>
-        </div>
         <div class="skill-card" data-category="iac">
-          <div class="skill-icon">🏗️</div>
+          <div class="skill-icon">🏗</div>
           <h3>Terraform</h3>
-          <p>Multi-tier architectures, VPC provisioning, state management, modules</p>
+          <p>Multi-tier AWS, VPC, state, modules, 33 resources</p>
           <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
           <span class="skill-level">Advanced</span>
         </div>
         <div class="skill-card" data-category="cloud">
-          <div class="skill-icon">☁️</div>
+          <div class="skill-icon">☁</div>
           <h3>AWS</h3>
-          <p>EC2, S3, VPC, IAM, RDS, Route 53, ALB, Lambda, DynamoDB, API Gateway</p>
-          <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+          <p>EC2, S3, VPC, IAM, RDS, ALB, Route 53, Lambda</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
           <span class="skill-level">Advanced</span>
         </div>
         <div class="skill-card" data-category="cicd">
           <div class="skill-icon">🚀</div>
           <h3>GitHub Actions</h3>
-          <p>Workflow automation, CI/CD pipelines, automated deployments</p>
+          <p>Lint → Dry-Run → Deploy, 2m 11s → 1m 18s proof</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+          <span class="skill-level">Advanced</span>
+        </div>
+        <div class="skill-card" data-category="containers">
+          <div class="skill-icon">☸</div>
+          <h3>Kubernetes</h3>
+          <p>k3s, 3-node cluster, self-healing, ingress</p>
           <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
           <span class="skill-level">Advanced</span>
         </div>
         <div class="skill-card" data-category="containers">
           <div class="skill-icon">🐳</div>
           <h3>Docker</h3>
-          <p>Containerization, Dockerfiles, multi-tier deployments, Docker Compose</p>
+          <p>Dockerfiles, Compose, multi-tier</p>
           <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
-          <span class="skill-level">Advanced</span>
-        </div>
-        <div class="skill-card" data-category="ai">
-          <div class="skill-icon">🤖</div>
-          <h3>OpenAI API</h3>
-          <p>GPT integration, prompt engineering, agent development</p>
-          <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
-          <span class="skill-level">Intermediate</span>
-        </div>
-        <div class="skill-card" data-category="ai">
-          <div class="skill-icon">📊</div>
-          <h3>Streamlit</h3>
-          <p>Rapid prototyping, AI-driven data dashboards, web apps</p>
-          <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
-          <span class="skill-level">Intermediate</span>
-        </div>
-        <div class="skill-card" data-category="cicd">
-          <div class="skill-icon">🔁</div>
-          <h3>CI/CD</h3>
-          <p>Pipeline automation, deployment workflows</p>
-          <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
-          <span class="skill-level">Intermediate</span>
-        </div>
-        <div class="skill-card" data-category="iac">
-          <div class="skill-icon">⚙️</div>
-          <h3>Ansible</h3>
-          <p>Playbooks, roles, inventory management, automated server configuration</p>
-          <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
           <span class="skill-level">Advanced</span>
         </div>
         <div class="skill-card" data-category="os">
           <div class="skill-icon">🐧</div>
           <h3>Linux</h3>
-          <p>Ubuntu, server administration, shell scripting, Nginx, system maintenance</p>
+          <p>Ubuntu, Nginx, MySQL, shell scripting</p>
           <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
           <span class="skill-level">Advanced</span>
         </div>
-        <div class="skill-card" data-category="iac">
-          <div class="skill-icon">📄</div>
-          <h3>YAML</h3>
-          <p>Configuration management, infrastructure definitions</p>
-          <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
-          <span class="skill-level">Advanced</span>
-        </div>
-        <div class="skill-card" data-category="code">
-          <div class="skill-icon">💻</div>
-          <h3>Scripting</h3>
-          <p>Bash, Python, PowerShell — automation, tooling</p>
+        <div class="skill-card" data-category="cicd">
+          <div class="skill-icon">🔁</div>
+          <h3>CI/CD & Monitoring</h3>
+          <p>Datadog, Prometheus, Grafana, ArgoCD</p>
           <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
           <span class="skill-level">Intermediate</span>
         </div>
         <div class="skill-card" data-category="docs">
           <div class="skill-icon">📝</div>
-          <h3>Technical Documentation</h3>
-          <p>System architecture, SOPs, user manuals, project documentation</p>
+          <h3>Technical Docs</h3>
+          <p>Architecture, SOPs, runbooks, DMI training</p>
           <div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div>
           <span class="skill-level">Expert</span>
+        </div>
+        <div class="skill-card" data-category="ai">
+          <div class="skill-icon">🧠</div>
+          <h3>Agentic Workflows</h3>
+          <p>Claude, LangChain, MCP, Groq — applied to DevOps docs</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+          <span class="skill-level">Intermediate - Real projects</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── PROJECTS ── -->
+  <!-- PROJECTS -->
   <section class="projects" id="projects">
     <div class="container">
       <div class="section-label">
@@ -317,7 +310,73 @@
 
       <div class="projects-grid">
 
-        <!-- PROJECT 1 — 3-Tier AWS Architecture -->
+        <!-- PROJECT 1 — ANSIBLE PRACTICAL — NEW #1 -->
+        <article class="project-card featured" style="border: 2px solid #00ff88;">
+          <div class="project-img">
+            <img
+              src="src/images/cicd_post.png"
+              alt="GitHub Actions 2m 11s failed to 1m 18s passed"
+              style="width:100%;height:100%;object-fit:contain;background:#0d1117;"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="project-img-placeholder" style="display:none;">
+              <span class="proj-placeholder-icon">🚀</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/nkydigitech/ansible_practical" class="proj-link" target="_blank">GitHub Repo ↗</a>
+              <a href="https://github.com/nkydigitech/ansible_practical/actions" class="proj-link" target="_blank">Live Actions ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag" style="background:#00ff88;color:#000">Featured</span>
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">Ansible</span>
+              <span class="tag">Lint → Dry-Run → Deploy</span>
+            </div>
+            <h3>Ansible CI/CD Pipeline — 2m 11s ❌ → 1m 18s ✅</h3>
+            <p><strong>Challenge:</strong> Manual SSH deploys, no checks, 3 AM firefights.<br/>
+               <strong>Solution:</strong> Built GitHub Actions pipeline with 6 guards: yamllint, ansible-lint, shellcheck, --syntax-check, --check --diff, auto-deploy. Template now reused as team standard.<br/>
+               <strong>Result:</strong> Run #1 failed at 2m 11s catching errors before prod. Run #2 passed at 1m 18s. Zero SSH.</p>
+            <div class="project-meta">
+              <span>✅ Real Terminal Proof</span>
+              <span>✅ 1m 18s Automated</span>
+              <span>✅ No SSH Needed</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 — Ansible Guide 15-Module -->
+        <article class="project-card featured">
+          <div class="project-img">
+            <div class="project-img-placeholder" style="display:flex; background: #1a1a1a; align-items:center; justify-content:center;">
+              <span class="proj-placeholder-icon" style="font-size: 3rem;">📖</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://nkydigitech.github.io/ansible-guide/" class="proj-link" target="_blank">View Live Guide ↗</a>
+              <a href="https://github.com/nkydigitech/ansible-guide" class="proj-link" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Ansible</span>
+              <span class="tag">15 Modules</span>
+              <span class="tag">MkDocs</span>
+              <span class="tag">Education</span>
+            </div>
+            <h3>Ansible Automation Lab — 15-Module Masterclass</h3>
+            <p><strong>Challenge:</strong> Ansible learning curve causes config errors and slow onboarding.<br/>
+               <strong>Solution:</strong> Built structured curriculum: Ad-hoc → Inventory → Playbooks → Roles → Jinja2 → Vault AES-256 → Dynamic Inventory → Collections → Capstone.<br/>
+               <strong>Result:</strong> Used across DMI community to train 30+ engineers, cuts time-to-productivity.</p>
+            <div class="project-meta">
+              <span>✅ 15 Modules</span>
+              <span>✅ Real Terminal Output</span>
+              <span>✅ Free & Open Source</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 — 3-Tier AWS -->
         <article class="project-card featured">
           <div class="project-img">
             <img
@@ -327,7 +386,7 @@
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
             />
             <div class="project-img-placeholder" style="display:none;">
-              <span class="proj-placeholder-icon">🏗️</span>
+              <span class="proj-placeholder-icon">🏗</span>
             </div>
             <div class="project-overlay">
               <a href="https://github.com/nkydigitech/dmi-cohort2-terraform-assignments" class="proj-link" target="_blank">Terraform Repo ↗</a>
@@ -340,91 +399,20 @@
               <span class="tag">AWS</span>
               <span class="tag">Ansible</span>
               <span class="tag">RDS MySQL</span>
-              <span class="tag">Featured</span>
             </div>
             <h3>Automated 3-Tier AWS Infrastructure</h3>
-            <p><strong>Challenge:</strong> Manual provisioning was causing "environment drift" and taking hours of manual effort, delaying deployment cycles.<br/>
-               <strong>Solution:</strong> Engineered a modular IaC framework using Terraform and Ansible to automate the entire stack (VPC, Subnets, ALB, and RDS).<br/>
-               <strong>Result:</strong> Reduced infrastructure configuration time by ~60% and ensured 100% consistency across environments.</p>
+            <p><strong>Challenge:</strong> Manual provisioning causing environment drift and hours of effort.<br/>
+               <strong>Solution:</strong> Modular IaC with Terraform + Ansible for full stack (VPC, Subnets, ALB, RDS).<br/>
+               <strong>Result:</strong> Cut config time by ~60%, 100% consistency, zero drift.</p>
             <div class="project-meta">
-              <span>✅ Zero Configuration Drift</span>
+              <span>✅ Zero Drift</span>
               <span>✅ Modular IaC</span>
-              <span>✅ Production-Ready</span>
+              <span>✅ 60% Faster</span>
             </div>
           </div>
         </article>
 
-        <!-- PROJECT 2 — GEORGEL Cancer Foundation (Real Client) -->
-        <article class="project-card featured">
-          <div class="project-img">
-            <img
-              src="src/images/georgelcancerfoundation.png"
-              alt="GEORGEL Cancer Foundation website"
-              style="width:100%;height:100%;object-fit:cover;object-position:top;"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-            />
-            <div class="project-img-placeholder" style="display:none;">
-              <span class="proj-placeholder-icon">🎗️</span>
-            </div>
-            <div class="project-overlay">
-              <a href="https://nkydigitech.github.io/georgel-cancer-foundation/" class="proj-link" target="_blank">View Live ↗</a>
-              <a href="https://github.com/nkydigitech/georgel-cancer-foundation" class="proj-link" target="_blank">GitHub ↗</a>
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tags">
-              <span class="tag">Real Client</span>
-              <span class="tag">Production</span>
-              <span class="tag">NGO</span>
-              <span class="tag">GitHub Pages</span>
-            </div>
-            <h3>GEORGEL Cancer Foundation — Production Delivery</h3>
-            <p><strong>Challenge:</strong> The foundation needed a professional, highly available digital presence to coordinate patient support and global donor outreach.<br/>
-               <strong>Solution:</strong> Architected and deployed a production-ready platform optimized for speed and accessibility, partnering with JUTH and the Ministry of Health.<br/>
-               <strong>Result:</strong> Successfully launched a live digital hub that serves as the primary touchpoint for the foundation's global impact.</p>
-            <div class="project-meta">
-              <span>✅ Live User Base</span>
-              <span>✅ Government Partnered</span>
-              <span>✅ 99.9% Availability</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 3 — Book Review App -->
-        <article class="project-card">
-          <div class="project-img">
-            <img
-              src="src/images/webserver_png.png"
-              alt="Book Review App live"
-              style="width:100%;height:100%;object-fit:cover;object-position:top;"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-            />
-            <div class="project-img-placeholder" style="display:none;">
-              <span class="proj-placeholder-icon">🐳</span>
-            </div>
-            <div class="project-overlay">
-              <a href="https://github.com/nkydigitech/capstone-book-review-app" class="proj-link" target="_blank">GitHub ↗</a>
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tags">
-              <span class="tag">Docker</span>
-              <span class="tag">React</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">MongoDB</span>
-            </div>
-            <h3>Multi-Tier App Containerization</h3>
-            <p><strong>Challenge:</strong> Managing dependency conflicts between React, Node.js, and MongoDB across different local and cloud environments.<br/>
-               <strong>Solution:</strong> Developed a multi-container orchestration strategy using Docker Compose to unify the frontend, backend, and database.<br/>
-               <strong>Result</strong>: Eliminated "it works on my machine" errors and streamlined the deployment process to AWS EC2.</p>
-            <div class="project-meta">
-              <span>✅ Zero Dep Conflicts</span>
-              <span>✅ AWS EC2 Deployed</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 4 — Kubernetes Cluster -->
+        <!-- PROJECT 4 — K8s Cluster -->
         <article class="project-card">
           <div class="project-img">
             <img
@@ -434,7 +422,7 @@
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
             />
             <div class="project-img-placeholder" style="display:none;">
-              <span class="proj-placeholder-icon">☸️</span>
+              <span class="proj-placeholder-icon">☸</span>
             </div>
             <div class="project-overlay">
               <a href="https://github.com/nkydigitech/devops-self-healing-k8s" class="proj-link" target="_blank">GitHub ↗</a>
@@ -444,79 +432,49 @@
             <div class="project-tags">
               <span class="tag">Kubernetes</span>
               <span class="tag">k3s</span>
-              <span class="tag">Orchestration</span>
+              <span class="tag">Self-Healing</span>
             </div>
             <h3>K8s Cluster Deployment & Scaling</h3>
-            <p><strong>Challenge:</strong> Ensuring application high availability and seamless scaling during traffic spikes.<br/>
-               <strong>Solution:</strong> Deployed and managed a multi-node Kubernetes cluster (1 control-plane + 2 workers), implementing precise pod scheduling and service routing.<br/>
-               <strong>Result:</strong> Established a resilient environment capable of self-healing and automated scaling across all nodes.</p>
+            <p><strong>Challenge:</strong> High availability during traffic spikes.<br/>
+               <strong>Solution:</strong> 3-node cluster (1 control + 2 workers), pod scheduling, service routing.<br/>
+               <strong>Result:</strong> Resilient, self-healing, auto-scaling.</p>
             <div class="project-meta">
-              <span>✅ High Availability</span>
-              <span>✅ 3-Node Cluster</span>
+              <span>✅ HA</span>
+              <span>✅ 3-Node</span>
               <span>✅ Self-Healing</span>
             </div>
           </div>
         </article>
 
-        <!-- PROJECT 5 — Ansible Guide -->
+        <!-- PROJECT 5 — Observability & GitOps -->
         <article class="project-card">
           <div class="project-img">
             <div class="project-img-placeholder" style="display:flex; background: #1a1a1a; align-items:center; justify-content:center;">
-              <span class="proj-placeholder-icon" style="font-size: 3rem;">⚙️</span>
+              <span class="proj-placeholder-icon" style="font-size: 3rem;">📊</span>
             </div>
             <div class="project-overlay">
-              <a href="https://nkydigitech.github.io/ansible-guide/" class="proj-link" target="_blank">View Guide ↗</a>
+              <a href="https://github.com/nkydigitech/petclinic-platform" class="proj-link" target="_blank">Platform Repo ↗</a>
             </div>
           </div>
           <div class="project-info">
             <div class="project-tags">
-              <span class="tag">Leadership</span>
-              <span class="tag">Ansible</span>
-              <span class="tag">Education</span>
-              <span class="tag">Documentation</span>
-            </div>
-            <h3>Ansible Automation Knowledge Base</h3>
-            <p><strong>Challenge:</strong> The steep learning curve of Ansible often leads to configuration errors and slow onboarding for new DevOps engineers.<br/>
-               <strong>Solution:</strong> Engineered a comprehensive, step-by-step technical guide simplifying complex automation concepts into actionable production workflows.<br/>
-               <strong>Result:</strong> Created a scalable resource that reduces "time-to-productivity" for engineers entering the automation space.</p>
-            <div class="project-meta">
-              <span>✅ Mentor-Grade Docs</span>
-              <span>✅ Process Optimization</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 6 — Spring PetClinic Microservices -->
-        <article class="project-card">
-          <div class="project-img">
-            <div class="project-img-placeholder" style="display:flex; background: #1a1a1a; align-items:center; justify-content:center;">
-              <span class="proj-placeholder-icon" style="font-size: 3rem;">⚙️</span>
-            </div>
-            <div class="project-overlay">
-              <a href="https://github.com/spring-petclinic/spring-petclinic-microservices" class="proj-link" target="_blank">App Repo ↗</a>
-              <a href="https://github.com/pravinmishraaws/petclinic-platform" class="proj-link" target="_blank">Platform Repo ↗</a>
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tags">
-              <span class="tag">Microservices</span>
               <span class="tag">ArgoCD</span>
               <span class="tag">Prometheus</span>
               <span class="tag">Grafana</span>
             </div>
             <h3>Observability & GitOps Platform</h3>
-            <p><strong>Challenge:</strong> Lack of visibility into microservices health, making it difficult to trace errors across a distributed system.<br/>
-               <strong>Solution:</strong> Implementing GitOps with ArgoCD for continuous delivery and a full monitoring stack (Prometheus, Grafana, Zipkin) for distributed tracing.<br/>
-               <strong>Result:</strong> Achieved full-stack observability, allowing for proactive incident detection and rapid resolution.</p>
+            <p><strong>Challenge:</strong> No visibility into microservices health.<br/>
+               <strong>Solution:</strong> GitOps with ArgoCD + Prometheus, Grafana, Zipkin tracing.<br/>
+               <strong>Result:</strong> Full observability, proactive incident detection.</p>
             <div class="project-meta">
-              <span>✅ GitOps (ArgoCD)</span>
-              <span>✅ Full Observability</span>
-              <span>✅ Distributed Tracing</span>
+              <span>✅ GitOps</span>
+              <span>✅ Monitoring</span>
+              <span>✅ Tracing</span>
             </div>
           </div>
         </article>
 
-        <!-- PROJECT 7 — DevOps KB Auto-Builder (AI + DevOps) -->
+        <!-- PROJECT 6 — DevOps KB Builder — REAL not buzzword -->
         <article class="project-card">
           <div class="project-img">
             <div class="project-img-placeholder" style="display:flex; background: #1a1a1a; align-items:center; justify-content:center;">
@@ -529,86 +487,31 @@
           <div class="project-info">
             <div class="project-tags">
               <span class="tag">Python</span>
-              <span class="tag">Groq LLM</span>
+              <span class="tag">Groq Llama 3.3</span>
               <span class="tag">Notion API</span>
-              <span class="tag">AI Automation</span>
+              <span class="tag">Real Project</span>
             </div>
-            <h3>DevOps KB Auto-Builder</h3>
-            <p><strong>Challenge:</strong> After production incidents, engineers are exhausted and documentation gets skipped — leaving the team vulnerable to repeated mistakes.<br/>
-               <strong>Solution:</strong> Built a Python tool that takes raw incident reports and auto-generates structured Notion knowledge base entries using Groq (Llama 3.3 70B). Runs entirely on free tools.<br/>
-               <strong>Result:</strong> Turned hours of manual documentation into a 30-second automated workflow — closing the gap between incident resolution and institutional knowledge capture.</p>
+            <h3>DevOps KB Auto-Builder — Real AI Tool</h3>
+            <p><strong>Challenge:</strong> After incidents, docs get skipped, mistakes repeat.<br/>
+               <strong>Solution:</strong> Python tool takes raw incident report → auto-generates structured Notion KB entry using Groq Llama 3.3 70B. Runs on free tools.<br/>
+               <strong>Result:</strong> Hours of docs → 30-second workflow. Submitted to Notion MCP Challenge.</p>
             <div class="project-meta">
-              <span>✅ AI-Powered</span>
-              <span>✅ Zero Manual Docs</span>
+              <span>✅ Real & Working</span>
               <span>✅ Free Tools Only</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 8 — Ultimate DevOps Learning Hub -->
-        <article class="project-card">
-          <div class="project-img">
-            <div class="project-img-placeholder" style="display:flex; background: #1a1a1a; align-items:center; justify-content:center;">
-              <span class="proj-placeholder-icon" style="font-size: 3rem;">📚</span>
-            </div>
-            <div class="project-overlay">
-              <a href="https://nkydigitech.github.io/ultimate-devops-learning-hub" class="proj-link" target="_blank">View Live ↗</a>
-              <a href="https://github.com/nkydigitech/ultimate-devops-learning-hub" class="proj-link" target="_blank">GitHub ↗</a>
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tags">
-              <span class="tag">Astro</span>
-              <span class="tag">Linux</span>
-              <span class="tag">Docker</span>
-              <span class="tag">Education</span>
-            </div>
-            <h3>Ultimate DevOps Learning Hub</h3>
-            <p><strong>Challenge:</strong> DevOps learning resources are scattered across blogs, videos, and courses — making it hard for beginners to follow a structured path.<br/>
-               <strong>Solution:</strong> Built a hands-on learning platform with Astro covering Linux, Git, Python, Docker, Kubernetes, Terraform, and Ansible. Each lesson includes labs, screenshots, and knowledge checks.<br/>
-               <strong>Result:</strong> A live, continuously growing educational platform that takes learners from zero to production-ready.</p>
-            <div class="project-meta">
-              <span>✅ Live Site</span>
-              <span>✅ Hands-On Labs</span>
-              <span>✅ 7+ Modules</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 9 — NairaVault Digital Bank -->
-        <article class="project-card">
-          <div class="project-img">
-            <div class="project-img-placeholder" style="display:flex; background: #1a1a1a; align-items:center; justify-content:center;">
-              <span class="proj-placeholder-icon" style="font-size: 3rem;">🏦</span>
-            </div>
-            <div class="project-overlay">
-              <a href="https://github.com/nkydigitech/nairavault" class="proj-link" target="_blank">GitHub ↗</a>
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">FinTech</span>
-              <span class="tag">UI/UX</span>
-            </div>
-            <h3>NairaVault — Digital Banking Interface</h3>
-            <p><strong>Challenge:</strong> Nigerian fintech apps often lack the trust signals and corporate polish that users expect from a bank.<br/>
-               <strong>Solution:</strong> Designed and built a serious, corporate digital banking interface — account dashboards, transfer flows, and security-focused UX patterns.<br/>
-               <strong>Result:</strong> A production-quality fintech UI that demonstrates full-stack capability beyond infrastructure.</p>
-            <div class="project-meta">
-              <span>✅ Corporate UI</span>
-              <span>✅ Production Quality</span>
-              <span>✅ FinTech</span>
+              <span>✅ Closes Knowledge Gap</span>
             </div>
           </div>
         </article>
 
       </div>
+
+      <div style="margin-top:40px; text-align:center; opacity:0.6">
+        <p>Other builds: <a href="https://nkydigitech.github.io/georgel-cancer-foundation/" target="_blank">GEORGEL Cancer Foundation (NGO)</a> · <a href="https://github.com/nkydigitech/capstone-book-review-app" target="_blank">Book Review App on EKS</a> · <a href="https://nkydigitech.github.io/ultimate-devops-learning-hub" target="_blank">Ultimate DevOps Hub</a></p>
+      </div>
     </div>
   </section>
 
-  <!-- ── PIPELINE DIAGRAM ── -->
+  <!-- PIPELINE -->
   <section class="pipeline" id="pipeline">
     <div class="container">
       <div class="section-label">
@@ -616,76 +519,66 @@
         <span class="label-text">04 / how I deploy</span>
       </div>
       <h2 class="section-title">My deployment<br/><em>pipeline.</em></h2>
-      <p class="pipeline-intro">Every project I build follows a professional DevOps workflow — from local commit to global cloud.</p>
+      <p class="pipeline-intro">Stop SSH-ing into prod. Every project follows Lint → Dry-Run → Deploy. Same template that went 2m 11s ❌ → 1m 18s ✅</p>
 
       <div class="pipeline-steps">
 
         <div class="pipe-step" data-step="1">
-          <div class="pipe-icon">💻</div>
+          <div class="pipe-icon">🔍</div>
           <div class="pipe-body">
-            <h4>Local Dev (WSL2)</h4>
-            <p>Writing modular IaC and automation playbooks on Ubuntu via WSL2</p>
-            <code>terraform init && terraform plan</code>
+            <h4>Lint</h4>
+            <p>Catch errors before prod</p>
+            <code>yamllint . && ansible-lint && shellcheck *.sh</code>
           </div>
           <div class="pipe-arrow">→</div>
         </div>
 
         <div class="pipe-step" data-step="2">
-          <div class="pipe-icon">🐙</div>
+          <div class="pipe-icon">🧪</div>
           <div class="pipe-body">
-            <h4>GitHub Versioning</h4>
-            <p>Version control and PR reviews to ensure production-grade code quality</p>
-            <code>git push origin main</code>
+            <h4>Dry-Run</h4>
+            <p>See what would change, without changing</p>
+            <code>ansible-playbook --syntax-check --check --diff site.yml</code>
           </div>
           <div class="pipe-arrow">→</div>
         </div>
 
         <div class="pipe-step" data-step="3">
-          <div class="pipe-icon">🏗️</div>
+          <div class="pipe-icon">🐙</div>
           <div class="pipe-body">
-            <h4>Terraform Provisioning</h4>
-            <p>Automated rollout of VPCs, Security Groups, and IAM roles</p>
-            <code>terraform apply -auto-approve</code>
+            <h4>Git Push → GitHub Actions</h4>
+            <p>Automated guardrails on every push</p>
+            <code>git push origin main</code>
           </div>
           <div class="pipe-arrow">→</div>
         </div>
 
         <div class="pipe-step" data-step="4">
-          <div class="pipe-icon">⚙️</div>
+          <div class="pipe-icon">🏗</div>
           <div class="pipe-body">
-            <h4>Ansible Configuration</h4>
-            <p>Automating software installation and server hardening</p>
-            <code>ansible-playbook site.yml</code>
+            <h4>Terraform Provision</h4>
+            <p>VPC, SG, IAM, ALB — 33 resources</p>
+            <code>terraform apply -auto-approve</code>
           </div>
           <div class="pipe-arrow">→</div>
         </div>
 
         <div class="pipe-step" data-step="5">
-          <div class="pipe-icon">🐳</div>
+          <div class="pipe-icon">⚙</div>
           <div class="pipe-body">
-            <h4>Docker Orchestration</h4>
-            <p>Containerizing apps for environment parity and rapid scaling</p>
-            <code>docker run -d -p 3000:3000 app</code>
+            <h4>Ansible Deploy</h4>
+            <p>Idempotent config, zero SSH</p>
+            <code>ansible-playbook site.yml</code>
           </div>
           <div class="pipe-arrow">→</div>
         </div>
 
-        <div class="pipe-step" data-step="6">
-          <div class="pipe-icon">☸️</div>
+        <div class="pipe-step live" data-step="6">
+          <div class="pipe-icon">✅</div>
           <div class="pipe-body">
-            <h4>k3s Management</h4>
-            <p>Orchestrating pods and services for high-availability</p>
-            <code>kubectl apply -f deployment.yaml</code>
-          </div>
-          <div class="pipe-arrow">→</div>
-        </div>
-
-        <div class="pipe-step live" data-step="7">
-          <div class="pipe-icon">🌍</div>
-          <div class="pipe-body">
-            <h4>Production Live</h4>
-            <p>Secure, scaled, and accessible infrastructure delivering real value</p>
-            <code>https://nkydigitech.github.io</code>
+            <h4>Production Live — 1m 18s</h4>
+            <p>No 3 AM calls. Runbook in Notion.</p>
+            <code>https://github.com/nkydigitech/ansible_practical/actions</code>
           </div>
         </div>
 
@@ -693,7 +586,7 @@
     </div>
   </section>
 
-  <!-- ── CONTACT ── -->
+  <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container">
       <div class="section-label">
@@ -703,21 +596,17 @@
 
       <div class="contact-grid">
         <div class="contact-left">
-          <h2 class="section-title">Let's build<br/><em>something great.</em></h2>
-          <p>I am actively seeking Cloud & DevOps Engineer roles and consulting opportunities. If you need infrastructure that scales without the stress, let's connect.</p>
+          <h2 class="section-title">Let's build<br/><em>something reliable.</em></h2>
+          <p>I help teams stop SSH-ing into prod. If you need 1-min pipelines that don't break at 3 AM, let's talk. Open to remote roles.</p>
 
           <div class="contact-links">
             <a href="mailto:nahanonye@gmail.com" class="contact-link">
-              <span class="cl-icon">✉️</span>
+              <span class="cl-icon">✉</span>
               <span>nahanonye@gmail.com</span>
-            </a>
-            <a href="mailto:nkydigitech01@gmail.com" class="contact-link">
-              <span class="cl-icon">✉️</span>
-              <span>nkydigitech01@gmail.com</span>
             </a>
             <a href="https://github.com/nkydigitech" class="contact-link" target="_blank">
               <span class="cl-icon">🐙</span>
-              <span>github.com/nkydigitech</span>
+              <span>github.com/nkydigitech — 80+ repos</span>
             </a>
             <a href="https://www.linkedin.com/in/nkechiahanonye" class="contact-link" target="_blank">
               <span class="cl-icon">💼</span>
@@ -737,7 +626,7 @@
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell me about the role or project..." required></textarea>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about the role or pipeline you want to automate..." required></textarea>
           </div>
           <button type="submit" class="btn btn-primary full-width">
             <span>Send Message</span>
@@ -748,14 +637,13 @@
     </div>
   </section>
 
-  <!-- ── FOOTER ── -->
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
         <div class="footer-logo">
           <span class="logo-bracket">[</span>nky<span class="logo-accent">digitech</span><span class="logo-bracket">]</span>
         </div>
-        <p class="footer-copy">Built with ❤️ from Lagos, Nigeria · Hosted on GitHub Pages · Deployed with Terraform + Ansible + Docker + k3s</p>
+        <p class="footer-copy">Built with ❤ from Lagos · Hosted on GitHub Pages · Deployed with Lint → Dry-Run → Deploy · 1m 18s</p>
         <p class="footer-year">© 2026 Nkechi Ahanonye</p>
       </div>
     </div>
