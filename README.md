@@ -1,5 +1,6 @@
 Nkechi Anna Ahanonye | Cloud & DevOps Engineer
-I turn manual, 3 AM-breaking deployments into 1-min automated pipelines.
+I turn 3 AM-breaking deployments into 1-min pipelines with AWS + Ansible + Terraform.
+Building security-first AI agents on Amazon Bedrock AgentCore | AI Governance on AWS certified.
 
 Stop SSH-ing into prod. → Lint → Dry-Run → Deploy with GitHub Actions + Ansible + Terraform
 🚀 Mission
@@ -66,7 +67,7 @@ No SSH. No manual steps.
 
 📈 Stats
 
-80+ repos. 15 years uptime obsession. Open to Remote Roles.
+99 repos. 15 years uptime obsession. From cybercafe uptime to AgentCore.
 📬 Let's Connect
 
     Portfolio: https://nkydigitech.github.io/nky-portfolio/ (new version deploying)
