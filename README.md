@@ -7,7 +7,7 @@ Stop SSH-ing into prod. → Lint → Dry-Run → Deploy with GitHub Actions + An
 
 15 years running a high-pressure cybercafe taught me: real users don't care about your stack — they care that the system works. Downtime = lost revenue immediately.
 
-Today I help remote teams stop firefighting and ship reliably. No more SSH, no more 2 AM calls.
+Today I help remote teams stop firefighting and ship reliably. No more SSH, no more 3 AM calls.
 
 Proof: Fix GitHub Actions workflow — Run #1 Failed 2m 11s ❌ → Run #2 Passed 1m 18s ✅
 Repo: nkydigitech/ansible_practical | Live Actions: Actions Tab
