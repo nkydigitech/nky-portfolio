@@ -79,8 +79,8 @@
         </div>
         <div class="stat-sep"></div>
         <div class="stat">
-          <span class="stat-num">DMI</span>
-          <span class="stat-label">DevOps Mentor</span>
+          <span class="stat-num">AgentCore</span>
+          <span class="stat-label">Security-First AI Agents</span>
         </div>
       </div>
     </div>
@@ -164,8 +164,8 @@ jobs:
             <span class="comp-text">Kubernetes Orchestration</span>
           </div>
           <div class="comp-item">
-            <span class="comp-icon">📝</span>
-            <span class="comp-text">Mentor-Grade Docs</span>
+            <span class="comp-icon">🤖</span>
+            <span class="comp-text">Security-First AI Agents</span>
           </div>
         </div>
       </div>
@@ -174,13 +174,14 @@ jobs:
           <h2 class="section-title">Engineering reliability. <em>Automating growth.</em></h2>
           <p>My journey in tech started 15 years ago running a high-pressure cybercafe. That experience taught me a fundamental truth: <strong>real users don't care about your stack—they care that the system works.</strong> Downtime = lost revenue immediately.</p>
           <p>I moved from physical hardware to cloud, obsessed with one thing: <strong>Reliability.</strong> Today I help teams stop SSH-ing into prod. I build 1-min automated pipelines: <strong>Lint → Dry-Run → Deploy</strong> with GitHub Actions + Ansible + Terraform.</p>
+          <p>In 2026 I took that same discipline to <strong>Agentic AI</strong>: security-first agents on <strong>Amazon Bedrock AgentCore</strong> — SigV4 and OAuth2 M2M tool authentication, per-request tool authorization via Amazon Verified Permissions, and agents architected to decline rather than guess. <strong>AI Governance on AWS certified</strong> (BeSA Agentic AI Batch 10).</p>
           <p>My approach:</p>
           <ul>
             <li><strong>Efficiency:</strong> Terraform + Ansible slash setup from hours to minutes. Cut deployment time by 60%.</li>
             <li><strong>Stability:</strong> 6 checks before prod — yamllint, ansible-lint, shellcheck, syntax-check, --check --diff. No more 3 AM firefights.</li>
             <li><strong>Documentation:</strong> Mentor-grade runbooks that cut new member ramp-up by 30%.</li>
           </ul>
-          <p>Beyond engineering, I co-mentor 30+ engineers at <strong>DevOps Micro Internship (DMI)</strong> across Africa and audited 40+ IaC repos for production-grade quality.</p>
+          <p>Beyond engineering, I teach: a <strong>15-module Ansible masterclass</strong>, a free Ansible Lab, and a <strong>17-repo Blueprint series</strong> used by engineers across Africa. I co-mentor 30+ engineers at <strong>DevOps Micro Internship (DMI)</strong> and audited 40+ IaC repos for production-grade quality.</p>
           <p>If your team needs an engineer who can architect, automate, and document production infrastructure that scales without the stress — <strong>I am open to Remote roles.</strong></p>
 
           <div class="about-highlights">
@@ -201,8 +202,15 @@ jobs:
             <div class="highlight-item">
               <span class="hi-icon">🎓</span>
               <div>
-                <strong>Technical Leadership</strong>
-                <span>DMI Mentor · 30+ Engineers Trained</span>
+                <strong>Teaching & Leadership</strong>
+                <span>DMI Mentor · 15-Module Masterclass · 30+ Engineers Trained</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="hi-icon">🛡</span>
+              <div>
+                <strong>AI Governance on AWS</strong>
+                <span>Certified · BeSA Agentic AI Batch 10</span>
               </div>
             </div>
           </div>
@@ -291,9 +299,9 @@ jobs:
         <div class="skill-card" data-category="ai">
           <div class="skill-icon">🧠</div>
           <h3>Agentic Workflows</h3>
-          <p>Claude, LangChain, MCP, Groq — applied to DevOps docs</p>
-          <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
-          <span class="skill-level">Intermediate - Real projects</span>
+          <p>Bedrock AgentCore, Strands, Claude, MCP, Lambda — deployed agents</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+          <span class="skill-level">Production builds + AI Governance certified</span>
         </div>
       </div>
     </div>
@@ -310,8 +318,37 @@ jobs:
 
       <div class="projects-grid">
 
-        <!-- PROJECT 1 — ANSIBLE PRACTICAL — NEW #1 -->
+        <!-- PROJECT 1 — AGENTCODE — SECURITY-FIRST AI AGENT (FLAGSHIP) -->
         <article class="project-card featured" style="border: 2px solid #00ff88;">
+          <div class="project-img">
+            <div class="project-img-placeholder" style="display:flex; background: #1a1a1a; align-items:center; justify-content:center;">
+              <span class="proj-placeholder-icon" style="font-size: 3rem;">🤖</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/nkydigitech/agentcode" class="proj-link" target="_blank">GitHub Repo ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag" style="background:#00ff88;color:#000">Featured</span>
+              <span class="tag">Bedrock AgentCore</span>
+              <span class="tag">Security-First</span>
+              <span class="tag">Strands + Claude</span>
+            </div>
+            <h3>agentcode — Security-First AI Agent on Amazon Bedrock AgentCore</h3>
+            <p><strong>Challenge:</strong> AI agents that call tools with no real security model.<br/>
+               <strong>Solution:</strong> Strands agent running Claude Opus 4.6 on AWS Bedrock AgentCore — every tool call secured with a different auth pattern (SigV4, OAuth2 M2M), per-request tool authorization via Amazon Verified Permissions, architected to decline rather than guess.<br/>
+               <strong>Result:</strong> Deployed and tested on live AWS, documented with 64 real console screenshots. Built from the AWS re:Invent SEC307 security workshop.</p>
+            <div class="project-meta">
+              <span>✅ Deployed on AWS</span>
+              <span>✅ Zero Secrets in Code</span>
+              <span>✅ 64 Console Screenshots</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 — ANSIBLE CI/CD PROOF -->
+        <article class="project-card featured">
           <div class="project-img">
             <img
               src="src/images/cicd_post.png"
@@ -329,7 +366,6 @@ jobs:
           </div>
           <div class="project-info">
             <div class="project-tags">
-              <span class="tag" style="background:#00ff88;color:#000">Featured</span>
               <span class="tag">GitHub Actions</span>
               <span class="tag">Ansible</span>
               <span class="tag">Lint → Dry-Run → Deploy</span>
@@ -346,167 +382,119 @@ jobs:
           </div>
         </article>
 
-        <!-- PROJECT 2 — Ansible Guide 15-Module -->
-        <article class="project-card featured">
-          <div class="project-img">
-            <div class="project-img-placeholder" style="display:flex; background: #1a1a1a; align-items:center; justify-content:center;">
-              <span class="proj-placeholder-icon" style="font-size: 3rem;">📖</span>
-            </div>
-            <div class="project-overlay">
-              <a href="https://nkydigitech.github.io/ansible-guide/" class="proj-link" target="_blank">View Live Guide ↗</a>
-              <a href="https://github.com/nkydigitech/ansible-guide" class="proj-link" target="_blank">GitHub ↗</a>
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tags">
-              <span class="tag">Ansible</span>
-              <span class="tag">15 Modules</span>
-              <span class="tag">MkDocs</span>
-              <span class="tag">Education</span>
-            </div>
-            <h3>Ansible Automation Lab — 15-Module Masterclass</h3>
-            <p><strong>Challenge:</strong> Ansible learning curve causes config errors and slow onboarding.<br/>
-               <strong>Solution:</strong> Built structured curriculum: Ad-hoc → Inventory → Playbooks → Roles → Jinja2 → Vault AES-256 → Dynamic Inventory → Collections → Capstone.<br/>
-               <strong>Result:</strong> Used across DMI community to train 30+ engineers, cuts time-to-productivity.</p>
-            <div class="project-meta">
-              <span>✅ 15 Modules</span>
-              <span>✅ Real Terminal Output</span>
-              <span>✅ Free & Open Source</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 3 — 3-Tier AWS -->
-        <article class="project-card featured">
-          <div class="project-img">
-            <img
-              src="src/images/playbook_png.png"
-              alt="Ansible playbook running"
-              style="width:100%;height:100%;object-fit:cover;object-position:top;"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-            />
-            <div class="project-img-placeholder" style="display:none;">
-              <span class="proj-placeholder-icon">🏗</span>
-            </div>
-            <div class="project-overlay">
-              <a href="https://github.com/nkydigitech/dmi-cohort2-terraform-assignments" class="proj-link" target="_blank">Terraform Repo ↗</a>
-              <a href="https://github.com/nkydigitech/dmi-cohort2-ansible-assignments" class="proj-link" target="_blank">Ansible Repo ↗</a>
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tags">
-              <span class="tag">Terraform</span>
-              <span class="tag">AWS</span>
-              <span class="tag">Ansible</span>
-              <span class="tag">RDS MySQL</span>
-            </div>
-            <h3>Automated 3-Tier AWS Infrastructure</h3>
-            <p><strong>Challenge:</strong> Manual provisioning causing environment drift and hours of effort.<br/>
-               <strong>Solution:</strong> Modular IaC with Terraform + Ansible for full stack (VPC, Subnets, ALB, RDS).<br/>
-               <strong>Result:</strong> Cut config time by ~60%, 100% consistency, zero drift.</p>
-            <div class="project-meta">
-              <span>✅ Zero Drift</span>
-              <span>✅ Modular IaC</span>
-              <span>✅ 60% Faster</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 4 — K8s Cluster -->
+        <!-- PROJECT 3 — EKS MULTI-AGENT -->
         <article class="project-card">
           <div class="project-img">
-            <img
-              src="src/images/get_pods_png.png"
-              alt="Kubernetes cluster"
-              style="width:100%;height:100%;object-fit:cover;object-position:top;"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-            />
-            <div class="project-img-placeholder" style="display:none;">
-              <span class="proj-placeholder-icon">☸</span>
+            <div class="project-img-placeholder" style="display:flex; background: #1a1a1a; align-items:center; justify-content:center;">
+              <span class="proj-placeholder-icon" style="font-size: 3rem;">☸</span>
             </div>
             <div class="project-overlay">
-              <a href="https://github.com/nkydigitech/devops-self-healing-k8s" class="proj-link" target="_blank">GitHub ↗</a>
+              <a href="https://github.com/nkydigitech/production-ready-ai-agents-eks" class="proj-link" target="_blank">GitHub Repo ↗</a>
             </div>
           </div>
           <div class="project-info">
             <div class="project-tags">
               <span class="tag">Kubernetes</span>
-              <span class="tag">k3s</span>
-              <span class="tag">Self-Healing</span>
+              <span class="tag">AWS EKS</span>
+              <span class="tag">Multi-Agent</span>
             </div>
-            <h3>K8s Cluster Deployment & Scaling</h3>
-            <p><strong>Challenge:</strong> High availability during traffic spikes.<br/>
-               <strong>Solution:</strong> 3-node cluster (1 control + 2 workers), pod scheduling, service routing.<br/>
-               <strong>Result:</strong> Resilient, self-healing, auto-scaling.</p>
+            <h3>Production-Ready AI Agents on EKS</h3>
+            <p><strong>Challenge:</strong> Multi-agent systems get complex and expensive fast.<br/>
+               <strong>Solution:</strong> 7 agents (customer, supervisor, RAG, memory, knowledge-graph, MCP, strands) deployed to both minikube and a real AWS EKS cluster, with cost guards from the first test.<br/>
+               <strong>Result:</strong> Entire project ran at $0.55 of a $1.00 budget — measured, not estimated.</p>
             <div class="project-meta">
-              <span>✅ HA</span>
-              <span>✅ 3-Node</span>
-              <span>✅ Self-Healing</span>
+              <span>✅ 7 Agents</span>
+              <span>✅ Real EKS Cluster</span>
+              <span>✅ $0.55 Total Cost</span>
             </div>
           </div>
         </article>
 
-        <!-- PROJECT 5 — Observability & GitOps -->
+        <!-- PROJECT 4 — SERVERLESS AGENTIC AI -->
         <article class="project-card">
           <div class="project-img">
             <div class="project-img-placeholder" style="display:flex; background: #1a1a1a; align-items:center; justify-content:center;">
-              <span class="proj-placeholder-icon" style="font-size: 3rem;">📊</span>
+              <span class="proj-placeholder-icon" style="font-size: 3rem;">⚡</span>
             </div>
             <div class="project-overlay">
-              <a href="https://github.com/nkydigitech/petclinic-platform" class="proj-link" target="_blank">Platform Repo ↗</a>
+              <a href="https://github.com/nkydigitech/aws-serverless-agentic-ai" class="proj-link" target="_blank">GitHub Repo ↗</a>
             </div>
           </div>
           <div class="project-info">
             <div class="project-tags">
+              <span class="tag">Lambda</span>
+              <span class="tag">Step Functions</span>
+              <span class="tag">EventBridge</span>
+            </div>
+            <h3>Serverless Agentic AI — Choreography vs Orchestration</h3>
+            <p><strong>Challenge:</strong> Choosing how agents coordinate on AWS.<br/>
+               <strong>Solution:</strong> Built both patterns — EventBridge choreography and Step Functions orchestration — with Lambda agents in Python.<br/>
+               <strong>Result:</strong> Two working architectures with honest trade-offs documented, not just slides.</p>
+            <div class="project-meta">
+              <span>✅ Serverless</span>
+              <span>✅ 2 Patterns Compared</span>
+              <span>✅ Real Deployments</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 5 — CLOUDMART GITOPS -->
+        <article class="project-card">
+          <div class="project-img">
+            <div class="project-img-placeholder" style="display:flex; background: #1a1a1a; align-items:center; justify-content:center;">
+              <span class="proj-placeholder-icon" style="font-size: 3rem;">🛒</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/nkydigitech/cloudmart" class="proj-link" target="_blank">GitHub Repo ↗</a>
+              <a href="https://nkydigitech.github.io/cloudmart/" class="proj-link" target="_blank">Live Store ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Kubernetes</span>
               <span class="tag">ArgoCD</span>
-              <span class="tag">Prometheus</span>
-              <span class="tag">Grafana</span>
+              <span class="tag">GitOps</span>
             </div>
-            <h3>Observability & GitOps Platform</h3>
-            <p><strong>Challenge:</strong> No visibility into microservices health.<br/>
-               <strong>Solution:</strong> GitOps with ArgoCD + Prometheus, Grafana, Zipkin tracing.<br/>
-               <strong>Result:</strong> Full observability, proactive incident detection.</p>
+            <h3>CloudMart — GitOps E-Commerce on Kubernetes</h3>
+            <p><strong>Challenge:</strong> E-commerce deploys that drift without GitOps discipline.<br/>
+               <strong>Solution:</strong> Cloud-native store on Minikube — Docker, ArgoCD, NGINX Ingress, FastAPI, PostgreSQL 15, with a Jumia-style UI, real images, Naira prices and login/signup.<br/>
+               <strong>Result:</strong> Full store, GitOps-synced, live demo anyone can click.</p>
             <div class="project-meta">
-              <span>✅ GitOps</span>
-              <span>✅ Monitoring</span>
-              <span>✅ Tracing</span>
+              <span>✅ ArgoCD GitOps</span>
+              <span>✅ FastAPI + PostgreSQL</span>
+              <span>✅ Live Demo</span>
             </div>
           </div>
         </article>
 
-        <!-- PROJECT 6 — DevOps KB Builder — REAL not buzzword -->
+        <!-- PROJECT 6 — BALLOT TRUST 360 -->
         <article class="project-card">
           <div class="project-img">
             <div class="project-img-placeholder" style="display:flex; background: #1a1a1a; align-items:center; justify-content:center;">
-              <span class="proj-placeholder-icon" style="font-size: 3rem;">🧠</span>
+              <span class="proj-placeholder-icon" style="font-size: 3rem;">🗳</span>
             </div>
             <div class="project-overlay">
-              <a href="https://github.com/nkydigitech/devops-kb-builder" class="proj-link" target="_blank">GitHub ↗</a>
+              <a href="https://github.com/nkydigitech/ballot-trust-360-nigeria" class="proj-link" target="_blank">GitHub Repo ↗</a>
             </div>
           </div>
           <div class="project-info">
             <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Groq Llama 3.3</span>
-              <span class="tag">Notion API</span>
-              <span class="tag">Real Project</span>
+              <span class="tag">Hackaholics 7.0</span>
+              <span class="tag">Civic Tech</span>
+              <span class="tag">Trust Platform</span>
             </div>
-            <h3>DevOps KB Auto-Builder — Real AI Tool</h3>
-            <p><strong>Challenge:</strong> After incidents, docs get skipped, mistakes repeat.<br/>
-               <strong>Solution:</strong> Python tool takes raw incident report → auto-generates structured Notion KB entry using Groq Llama 3.3 70B. Runs on free tools.<br/>
-               <strong>Result:</strong> Hours of docs → 30-second workflow. Submitted to Notion MCP Challenge.</p>
+            <h3>Ballot Trust 360 — Nigerian Election Trust Suite</h3>
+            <p><strong>Challenge:</strong> Every Nigerian's election pain is trust — accreditation failures, altered result sheets.<br/>
+               <strong>Solution:</strong> Complete civic trust suite: automatic accreditation, EC8A result-sheet verification, AI-generated fictional candidates.<br/>
+               <strong>Result:</strong> All-Nigerian Edition built for Hackaholics 7.0 — a trust demo, not a toy.</p>
             <div class="project-meta">
-              <span>✅ Real & Working</span>
-              <span>✅ Free Tools Only</span>
-              <span>✅ Closes Knowledge Gap</span>
+              <span>✅ Hackathon Build</span>
+              <span>✅ Civic Trust</span>
+              <span>✅ All Nigerian Edition</span>
             </div>
           </div>
         </article>
 
-      </div>
-
-      <div style="margin-top:40px; text-align:center; opacity:0.6">
-        <p>Other builds: <a href="https://nkydigitech.github.io/georgel-cancer-foundation/" target="_blank">GEORGEL Cancer Foundation (NGO)</a> · <a href="https://github.com/nkydigitech/capstone-book-review-app" target="_blank">Book Review App on EKS</a> · <a href="https://nkydigitech.github.io/ultimate-devops-learning-hub" target="_blank">Ultimate DevOps Hub</a></p>
       </div>
     </div>
   </section>
@@ -606,7 +594,7 @@ jobs:
             </a>
             <a href="https://github.com/nkydigitech" class="contact-link" target="_blank">
               <span class="cl-icon">🐙</span>
-              <span>github.com/nkydigitech — 80+ repos</span>
+              <span>github.com/nkydigitech — 99 repos</span>
             </a>
             <a href="https://www.linkedin.com/in/nkechiahanonye" class="contact-link" target="_blank">
               <span class="cl-icon">💼</span>
